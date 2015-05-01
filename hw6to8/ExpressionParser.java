@@ -1,4 +1,4 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
 import java.util.List;
 import java.util.Stack;
@@ -8,7 +8,7 @@ import java.util.Stack;
  */
 
 public class ExpressionParser implements Parser {
-    public TripleExpression parse(String exp) {
+    public TripleExpression parse(String exp) throws Exception {
         PPNConverter converter = new PPNConverter();
         converter.convert(exp);
         List<String>list = converter.getOutput();
@@ -28,7 +28,7 @@ public class ExpressionParser implements Parser {
             }
             TripleExpression b = stack.pop();
             switch (s) {
-                case "Negative":
+                case "Negate":
                     stack.push( new Negative(b) );
                     continue nextS;
             }
@@ -46,13 +46,13 @@ public class ExpressionParser implements Parser {
                 case "/":
                     stack.push(new Divide(a, b));
                     break;
-                case "m":
+                case "mod":
                     stack.push(new Mod(a, b));
                     break;
-                case ">":
+                case ">>":
                     stack.push(new ShiftRight(a, b));
                     break;
-                case "<":
+                case "<<":
                     stack.push(new ShiftLeft(a, b));
                     break;
             }

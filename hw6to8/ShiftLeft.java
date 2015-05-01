@@ -1,4 +1,4 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
 /**
  * Created by Abduqodir on 30.03.2015.
@@ -9,7 +9,7 @@ public class ShiftLeft extends BinaryOperation {
         super(exp1, exp2);
     }
 
-    public int evaluate(int x, int y, int z) {
+    public int evaluate(int x, int y, int z) throws Exception {
         super.calculate(x, y, z);
         return res1 << res2;
     }

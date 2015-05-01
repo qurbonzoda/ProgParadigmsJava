@@ -1,16 +1,19 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
-import java.io.IOException;
 
 /**
  * Created by Abduqodir on 22.03.2015.
  */
 public class Main {
-    public static void main(String[] args) throws IOException {
-        Parser parser = new ExpressionParser();
-        String s = "1 + 5 mod 3";
-        TripleExpression exp = parser.parse(s);
-        System.out.println("Here we go :");
-        System.out.println(exp.evaluate(1, 2, 3));
+    public static void main(String[] args) throws Exception {
+        Parser parser = new CheckedParser();
+        String s = "x*y+(z-1   )/10";
+        try {
+            TripleExpression exp = parser.parse(s);
+            int res = exp.evaluate(1, 1, 1);
+            System.out.println(res);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
 }

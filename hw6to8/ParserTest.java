@@ -1,4 +1,4 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.function.BiFunction;
 import java.util.function.BinaryOperator;
 import java.util.function.UnaryOperator;
 
-import static info.kgeorgiy.courses.java_intro.homeworks.hw6.Util.*;
+import static info.kgeorgiy.courses.java_intro.homeworks.hw6to8.Util.*;
 
 /**
  * @author Niyaz Nigmatullin

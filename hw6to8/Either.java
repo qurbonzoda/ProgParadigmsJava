@@ -1,4 +1,4 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
 import java.util.function.Function;
 

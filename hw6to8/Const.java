@@ -1,10 +1,10 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
 /**
  * Created by Abduqodir on 22.03.2015.
  */
 public class Const implements TripleExpression {
-    int value;
+    private int value;
     public Const(int value) {
         this.value = value;
     }

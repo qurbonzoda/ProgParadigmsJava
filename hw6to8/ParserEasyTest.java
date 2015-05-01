@@ -1,6 +1,6 @@
-package info.kgeorgiy.courses.java_intro.homeworks.hw6;
+package info.kgeorgiy.courses.java_intro.homeworks.hw6to8;
 
-import static info.kgeorgiy.courses.java_intro.homeworks.hw6.Util.*;
+import static info.kgeorgiy.courses.java_intro.homeworks.hw6to8.Util.*;
 
 /**
  * @author Georgiy Korneev
